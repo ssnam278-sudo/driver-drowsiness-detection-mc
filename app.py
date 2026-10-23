@@ -66,5 +66,6 @@ if st.button("Run analysis", type="primary"):
     st.subheader("Timeline")
     st.line_chart(rows, x="time", y=["PERCLOS", "closure"], height=320)
     st.dataframe(rows[-1], use_container_width=True)
-else:\n    st.markdown("Choose a scenario and click **Run analysis** to see how temporal signals become an alert.")
+else:
+    st.markdown("Choose a scenario and click **Run analysis** to see how temporal signals become an alert.")
 
